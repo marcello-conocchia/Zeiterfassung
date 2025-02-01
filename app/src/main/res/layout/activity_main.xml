@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Banner: Willkommen, [User] -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Willkommen"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- Chronometer zur Anzeige der Arbeitszeit -->
+        <Chronometer
+            android:id="@+id/chronometerTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Arbeitszeit Starten -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arbeitszeit Starten"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Arbeitszeit Pausieren (zum Fortsetzen auch verwenden) -->
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arbeitszeit pausieren"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Arbeitszeit Stoppen -->
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arbeitszeit Stoppen"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Alle Einträge anzeigen -->
+        <Button
+            android:id="@+id/btnShowEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alle Einträge anzeigen"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- PDF-Bericht generieren -->
+        <Button
+            android:id="@+id/btnGeneratePdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PDF-Bericht generieren"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- ListView zur Anzeige der Einträge -->
+        <ListView
+            android:id="@+id/lvEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#BDBDBD"
+            android:dividerHeight="1dp" />
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+
+    </LinearLayout>
+</ScrollView>
