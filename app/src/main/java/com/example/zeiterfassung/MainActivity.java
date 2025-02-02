@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
     // Der Bericht enthält einen Header (Benutzername, aktueller Monat/Jahr, "Trattoria Volare"),
     // eine Tabelle (Spalten: Datum, Start, Ende, Pause, Dauer) und eine Gesamtsumme der Arbeitszeit.
 
-// ... weitere Importe
+
 
     private void generatePdfReport(List<WorkTimeEntry> entries) {
         // Filtere Einträge für den aktuellen Monat
